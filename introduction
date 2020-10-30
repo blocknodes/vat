@@ -1,0 +1,181 @@
+						Universal secrets management system(USMS)
+Overview:
+Manage Secrets and Protect Sensitive Data
+Secure, store and tightly control access to tokens, passwords, certificates, encryption keys for protecting secrets and other sensitive data using a UI, CLI, or HTTP API
+
+Backgound:
+1.	Secure dynamic infrastructure across clouds and environments: 
+The shift from static, on-premise infrastructure to dynamic, multi-provider infrastructure changes the approach to security. Security in static infrastructure relies on dedicated servers, static IP addresses, and a clear network perimeter. Security in dynamic infrastructure is defined by ephemeral applications and servers, trusted sources of user and application identity, and software-based encryption.
+
+Static Infrastructure
+Datacenters with inherently high-trust networks with clear network perimeters.
+TRADITIONAL APPROACH
+•	High trust networks
+•	A clear network perimeter
+•	Security enforced by IP Address
+
+Dynamic Infrastructure
+Multiple clouds and private datacenters without a clear network perimeter.
+VAULT APPROACH
+•	Low-trust networks in public clouds
+•	Unknown network perimeter across clouds
+•	Security enforced by Identity
+
+Highlights:
+a.	Secrets Management
+Audit access, automatically Centrally
+store, access, and deploy secrets across
+applications, systems, and infrastructure
+
+The Challenge
+Secrets for applications and systems need to be centralized and static IP-based solutions don't scale in dynamic environments with frequently changing applications and machines
+The Solution
+Vault centrally manages and enforces access to secrets and systems based on trusted sources of application and user identity
+
+Secret Management Features:
+Dynamic Secrets
+Dynamically create, revoke, and rotate secrets programmatically
+Secret Storage
+Encrypt data while at rest, in the storage backend of your choice
+Identity Plugins
+Improve the extensibility of Vault with pluggable identity backend
+Detailed Audit Logs
+Detailed audit log of all client interaction (authentication, token creation, secret access & revocation)
+Leasing & Revoking Secrets
+Manage authorization and create time-based tokens for automatic revocation or manual revocation
+
+Data Encryption
+Keep secrets and application data secure
+with one centralized workflow to encrypt
+data in flight and at rest
+
+The Challenge
+All application data should be encrypted, but deploying a cryptography and key management infrastructure is expensive, hard to develop against, and not cloud or multi-datacenter friendly
+
+
+The Solution
+Vault provides encryption as a service with centralized key management to simplify encrypting data in transit and at rest across clouds and data centers
+
+Encryption Features
+
+API-driven Encryption
+Encrypt application data during transit and rest with AES 256-bit CBC data encryption and TLS in transit.
+
+Encryption Key Rolling
+Update and roll new keys throughout distributed infrastructure while retaining the ability to decrypt encrypted data
+
+Identity-based Access
+Authenticate and access different clouds,
+systems, and endpoints using trusted
+identities
+
+The Challenge
+With the proliferation of different clouds, services, and systems all with their own identity providers, organizations need a way to manage identity sprawl
+
+
+The Solution
+Vault merges identities across providers and uses a unified ACL system to broker access to systems and secrets
+
+Identity-based Access Features
+Identity Plugins
+Improve the extensibility of Vault with pluggable identity backends
+
+Entities
+Integrated identities across platforms and using this information for policy and access control decisions.
+
+ACL Templates and Policy Control
+Create and manage policies that authorize access control throughout your infrastructure and organization
+
+Identity Groups
+Group trusted identities into logical groups for group-based access control.
+
+通用秘密管理系统(USMS)
+概述：
+管理机密，保护敏感数据
+使用UI、CLI或HTTP API保护对令牌、密码、证书、加密密钥的访问，并严格控制这些密钥的访问，以保护机密和其他敏感数据
+
+背景：
+1、跨云、跨环境的安全动态基础设施：
+从静态的本地基础架构向动态的多提供商基础架构的转变改变了安全方法。静态基础架构的安全性依赖于专用服务器、静态IP地址和明确的网络边界。动态基础架构的安全性由短暂的应用程序和服务器、用户和应用程序身份的可信来源以及基于软件的加密来定义。
+
+静态基础架构
+具有固有的高信任网络和清晰的网络边界的数据中心。
+传统方法
+●高信任网络
+●清晰的网络周界
+? IP地址强制实施安全性
+
+动态基础架构
+多个云和私有数据中心，没有明确的网络边界。
+金库方法
+●公有云低信任网络
+●跨云的网络边界未知
+●身份强制实施的安全
+
+亮点：
+a.秘密管理
+审计访问，自动集中
+存储、访问和部署机密
+应用程序、系统和基础设施
+
+挑战
+应用程序和系统的秘密需要集中处理，而基于静态IP的解决方案无法在应用程序和机器频繁变化的动态环境中扩展
+解决方案
+Vault基于可信的应用程序和用户身份来源，集中管理和强制执行对机密和系统的访问
+
+秘密管理特性：
+动态秘密
+以编程方式动态创建、撤销和旋转机密
+秘密存储
+在您选择的存储后端，在休息时加密数据
+标识插件
+通过可插入的身份后端提高Vault的可扩展性
+详细审计日志
+所有客户端交互（认证、令牌创建、秘密访问和撤销）的详细审计日志
+租赁和撤销秘密
+管理授权并创建基于时间的令牌，用于自动吊销或手动吊销
+
+数据加密
+保护机密和应用程序数据的安全
+一个集中的工作流加密
+飞行和静止数据
+
+挑战
+所有应用程序数据都应该加密，但是部署加密和密钥管理基础架构成本高昂，难以与之抗衡，而且不利于云或多数据中心
+
+
+解决方案
+Vault通过集中密钥管理提供加密即服务，简化跨云和数据中心传输和静止数据加密
+
+加密特性
+
+API驱动加密
+在传输过程中对应用程序数据进行加密，在传输过程中使用AES 256位CBC数据加密和TLS。
+
+加密密钥滚动
+在分布式基础架构中更新和滚动新密钥，同时保留解密加密数据的能力
+
+基于身份的访问
+认证接入不同云
+系统，以及使用受信任的端点
+身份
+
+挑战
+随着各种云、服务和系统越来越多，它们都有自己的身份提供商，组织需要一种管理身份蔓延的方法
+
+
+解决方案
+Vault在提供者之间合并身份，并使用统一的ACL系统代理对系统和机密的访问
+
+基于身份的访问特性
+标识插件
+通过可插入的身份后端提高Vault的可扩展性
+
+实体
+跨平台集成标识，并使用此信息进行策略和访问控制决策。
+
+ACL模板和策略控制
+创建和管理授权整个基础架构和组织的访问控制的策略
+
+身份组
+将信任的身份划分为逻辑组，用于基于组的访问控制。
